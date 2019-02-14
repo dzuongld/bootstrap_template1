@@ -1,4 +1,86 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
 
+body {
+  overflow: hidden;  /* no content outside the browser width */
+  font-family: 'Lato', sans-serif;
+  color: #505962;
+}
+
+/* nav scrolling offset */
+/* move section down per navbar size (62px) */
+.offset:before {
+  height: 62px;
+  margin-top: -62px; /* get rid of white space between sections */
+  content: "";
+  display: block; /* sections are displayed on top of each other rather than inline*/
+}
+
+/* extra bootstrap column padding */
+[class*="col-"] { /* target all columns*/
+  padding: 1rem; /* 16px default font size in chrome*/
+}
+
+/* ======================== NAVIGATION */
+.navbar {
+  padding: 0.6rem 1rem;
+  text-transform: uppercase;
+  font-size: 0.9rem; /* reduce font size */
+  font-weight: 700;
+  letter-spacing: 0.1rem; /* space in between */
+  background-color: rgba(57, 63, 70, 0.9)!important; /* 90% opacity */
+}
+
+.navbar-brand img {
+  height: 2rem;
+}
+
+.navbar-nav .nav-link {
+  color: white;
+  padding-top: 0.8rem;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link:hover {
+  color: #00B3FF;
+}
+
+.navbar-nav li {
+  padding-right: 0.8rem;
+}
+
+/* from browser inspector */
+.svg-inline--fa.fa-bars.fa-w-14 {
+  color: white;
+  font-size: 1.6rem;
+}
+
+/* ====================== LANDING */
+.home-inner {
+  background-image: url('img/landing.png');
+}
+
+.caption {
+  width: 100%;
+  max-width: 100%;
+  position: absolute; /* fix the text to initial position */
+  top: 40%;
+  z-index: 1;
+}
+
+.caption h3 {
+  color: white;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  padding-bottom: 2rem; /* space out from the button */
+}
+
+.btn {
+  border-width: medium;
+  border-radius: 0; /* boxy */
+  padding: 0.5rem 1.1rem;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
 
 /*============ BOOTSTRAP BREAK POINTS:
 
