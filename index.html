@@ -58,10 +58,7 @@
 >
 
   <!-- home section - start -->
-  <div
-    id="home"
-    class="offset"
-  >
+  <div id="home">
 
     <!-- navigation -->
     <!-- navbar will expand after 768px -->
@@ -157,7 +154,37 @@
     id="about"
     class="offset"
   >
+    <div class="jumbotron">
+      <h3 class="heading">About</h3>
+      <div class="heading-underline"></div>
+      <div class="row narrow">
+        <!-- 3 columns = 12/4 -->
+        <div class="col-md-4">
+          <div class="about text-center">
+            <i class="fas fa-desktop fa-3x"></i>
+            <h3>Full Screen Landing</h3>
+            <p>Nest features a full screen, responsive landing page using Bootstrap</p>
+          </div>
+        </div>
 
+        <div class="col-md-4">
+          <div class="about text-center">
+            <i class="fas fa-arrow-down fa-3x"></i>
+            <h3>Smooth Scrolling</h3>
+            <p>The Nest Bootstrap navigation menu features smooth scrolling links</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="about text-center">
+            <i class="fas fa-address-card fa-3x"></i>
+            <h3>Contact Form</h3>
+            <p>Using Bootstrap and PHP Mailer, Nest has a responsive contact form</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
   </div>
   <!-- about section - end -->
 
@@ -166,7 +193,99 @@
     id="portfolio"
     class="offset"
   >
+    <div class="container-fluid padding">
+      <h3 class="heading">Portfolio</h3>
+      <div class="heading-underline"></div>
+      <!-- portfolio grid -->
+      <!-- row 1 -->
+      <div class="row no-padding">
+        <div class="col-md-6">
+          <!-- item 1 -->
+          <div class="portfolio-item">
+            <a
+              href="img/portfolio/1.png"
+              data-lightbox="example-set"
+              data-title="My Portfolio Image Description"
+            >
+              <img
+                src="img/portfolio/1.png"
+                class="example-image"
+                alt=""
+              >
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <!-- item 2 -->
+          <div class="portfolio-item">
+            <a
+              href="img/portfolio/2.png"
+              data-lightbox="example-set"
+              data-title="My Portfolio Image Description"
+            >
+              <img
+                src="img/portfolio/2.png"
+                class="example-image"
+                alt=""
+              >
+            </a>
+          </div>
+        </div>
+      </div>
 
+      <!-- row 2 -->
+      <div class="row no-padding">
+        <div class="col-md-6">
+          <!-- item 1 -->
+          <div class="portfolio-item">
+            <a
+              href="img/portfolio/3.png"
+              data-lightbox="example-set"
+              data-title="My Portfolio Image Description"
+            >
+              <img
+                src="img/portfolio/3.png"
+                class="example-image"
+                alt=""
+              >
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <!-- item 2 -->
+          <div class="portfolio-item">
+            <a
+              href="img/portfolio/4.png"
+              data-lightbox="example-set"
+              data-title="My Portfolio Image Description"
+            >
+              <img
+                src="img/portfolio/4.png"
+                class="example-image"
+                alt=""
+              >
+            </a>
+          </div>
+
+        </div>
+      </div>
+      <!-- end grid -->
+    </div>
+    <!-- end container -->
+
+    <!--  -->
+    <div class="narrow text-center padding">
+      <!-- lead - bootstrap class that makes p text appear larger -->
+      <p class="lead">Get in contact with us to see more of our great portfolio design work in addition to web
+        development projects such as websites, apps and more!</p>
+      <!-- block - center the button -->
+      <div class="block">
+        <a
+          href="#contact"
+          class="btn btn-secondary"
+        >Get In Touch</a>
+      </div>
+    </div>
   </div>
   <!-- portfolio section - end -->
 
@@ -175,7 +294,43 @@
     id="testimonials"
     class="offset"
   >
+    <div class="jumbotron">
+      <h3 class="heading">Testimonials</h3>
+      <div class="heading-underline"></div>
 
+      <div class="row narrow">
+        <div class="col-md-6">
+          <!-- bootstrap card -->
+          <div class="card text-center">
+            <img
+              class="card-img-top"
+              src="img/testimonials/1.png"
+              alt=""
+            >
+            <div class="card-body">
+              <h4>John Lee</h4>
+              <h5>CEO, Company Inc.</h5>
+              <p>"I have over 10 years of experience in technology and haven't come accross a better service."</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card text-center">
+            <img
+              class="card-img-top"
+              src="img/testimonials/2.png"
+              alt=""
+            >
+            <div class="card-body">
+              <h4>Jessica Miller</h4>
+              <h5>President, Company Inc.</h5>
+              <p>"I have over 10 years of experience in technology and haven't come accross a better service."</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   <!-- testimonial section - end -->
 
@@ -190,7 +345,7 @@
 
 
   <!-- scripts - start -->
-  <script src="js/jquery-3.3.1.slim.min.js"></script>
+  <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script
     defer
